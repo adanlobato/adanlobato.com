@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Foundation CSS -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/foundation/5.0.3/css/foundation.min.css">
+
+        <!-- FontAwesome -->
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <header id="header" class="row">
+            <div class="small-6 small-centered columns">
+                <div id="logo" class="left">
+                    <h1><a href="/" title="{{ site.name }}">adanlobato<span>.com</span></a></h1>
+                </div>
+                <div id="about" class="right">
+                    <img src="https://pbs.twimg.com/profile_images/2274952837/1v64k8sb3szg913jjfvm.jpeg">
+                    <ul>
+                        <li><a href="http://twitter.com/adanlobato"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="http://github.com/adanlobato"><i class="fa fa-github-alt"></i></a></li>
+                        <li><a href="http://www.linkedin.com/in/adanlobato"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="row">
+            <div class="small-10 small-centered columns">
+                {{ content }}
+            </div>
+        </div>
+
+        <footer class="row">
+            <div class="small-10 small-centered columns">
+                <div class="inner">
+                    © Adán Lobato
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+        <!-- Foundation JavaScript -->
+        <script src="//cdn.jsdelivr.net/foundation/5.0.3/js/foundation.min.js"></script>
+
+    </body>
+</html>

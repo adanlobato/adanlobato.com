@@ -2,3 +2,4 @@ name: adanlobato.com
 base_url: 'http://adanlobato.com'
 markdown: redcarpet
 pygments: true
+permalink: pretty

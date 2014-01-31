@@ -1,0 +1,126 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
+body {
+    background: #0B0B09 url(images/wood-overlay.jpg) no-repeat center top fixed;
+    background-size: cover;
+    color: #fff;
+    -webkit-text-stroke: 0.5px;
+    -webkit-font-smoothing: antialiased;
+}
+
+a { color: #00d0d6; -webkit-transition: all 0.5s ease; }
+a:hover { color: #25f8ff; }
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    font-family: 'Raleway';
+    font-weight: 100;
+    /*letter-spacing: -0.05em;*/
+    margin: 10px 0 20px;
+    text-shadow: 1px 1px 1px #000;
+    filter: DropShadow(Color=#000000, OffX=1, OffY=1);
+}
+
+abbr, acronym { color: #fff; border-bottom: 1px dotted #DDD; }
+
+hr { margin: 0 auto; border: 0; border-top: 1px solid rgba(153,153,153,.3); width: 50%; }
+
+.highlight { background: rgba(39,40,34,.9); }
+pre, .highlight pre {
+    display: block;
+    padding: 1em;
+    margin: 0 0 1em;
+    font-size: .9em;
+    line-height: 2em;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    border: 1px solid rgba(153,153,153,.3);;
+    border-radius: 4px;
+}
+
+code { font-weight: 100; }
+
+/* Header */
+#header { padding: 0; border: 0; margin: .65em auto .65em; }
+#header h1 { margin: 0; }
+#header h1 a {
+    text-shadow: 1px 1px 1px #000;
+    color: #fff;
+    font-family: 'Raleway', arial, serif;
+    font-size: 1.5em;
+    letter-spacing: -0.075em;
+    position: relative;
+}
+#header h1 a:hover { color: #fefefe; text-decoration: none; }
+#header h1 a span {
+    position: absolute;
+    bottom: -15px;
+    letter-spacing: 0px;
+    right: 0;
+    font-size: 0.400em;
+}
+#header #about img { width: 100px; margin-right: 40px; border-radius: 4em; border: 2px solid #fff; }
+#header #about ul { list-style: none; margin: 0; position: absolute; right: 0; top: 0; }
+#header #about ul li { font-size: 1.2em; margin: 0 .4em .4em 0; }
+#header #about ul li a { display: table; background: #fff; color: #444; border-radius: 2em; width: 1.5em; height: 1.5em; -webkit-transition: all 0.5s ease; }
+#header #about ul li a:hover { color: #00d0d6; -webkit-transform: rotate(15deg); }
+#header #about ul li a i { display: table-cell; text-align: center; vertical-align: middle; }
+
+/* Footer */
+footer { font-size: .8em; }
+footer .inner { border-top: 1px solid rgba(153,153,153,.3); padding: 2em 0; }
+
+
+/* Section */
+section h2 { border-bottom: 1px solid rgba(153,153,153,.3); text-align: right; }
+
+/* Small Post */
+#articles article, #talks article { position: relative; }
+#articles article h3, #talks article h3 { font-size: 1.5em; padding-left: 4em; }
+#articles article time, #talks article time {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font: 1.2em/1.7em 'Raleway';
+    text-align: right;
+    border-right: 1px solid rgba(153,153,153,.3);
+    padding-right: .5em;
+    width: 4.5em;
+}
+#articles article span, #talks article span { display: block; font-size: .6em; }
+
+/* Post */
+article.post { position: relative; border-top: 1px solid rgba(153,153,153,.3); }
+article.post h2 { font-size: 2.4em; }
+article.post h2 a { color: #fff; }
+article.post .date-wrapper {
+    height: 80px;
+    width: 50px;
+    left: -60px;
+    top: 0;
+    position: absolute;
+    background: #00BEC4 repeat scroll 0 0;
+    -moz-box-shadow: 2px 2px 5px #111111;
+    -webkit-box-shadow: 2px 2px 5px #111111;
+}
+article.post .date {
+    height: 80px;
+    width: 50px;
+    position: relative;
+    -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3) inset;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3) inset;
+}
+article.post .date .day, article.post .date .month, article.post .date .year {
+    line-height: 1em;
+    font-weight: bold;
+    color: #222;
+    display: block;
+    text-align: center;
+    width: 50px;
+    text-transform: uppercase;
+}
+article.post .date .day { font-size: 40px; }
+article.post .date .month { font-size: 21px; margin-top: -0.2em; }
+article.post .date .year { font-size: 18px; }

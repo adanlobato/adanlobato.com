@@ -124,3 +124,7 @@ article.post .date .day, article.post .date .month, article.post .date .year {
 article.post .date .day { font-size: 40px; }
 article.post .date .month { font-size: 21px; margin-top: -0.2em; }
 article.post .date .year { font-size: 18px; }
+
+/* About */
+.skills dl dt { font: normal .8em 'Raleway'; }
+.skills dl dd .progress { background: rgba(153,153,153,.3); border: none; height: 2px; padding: 0; margin: 0; }
